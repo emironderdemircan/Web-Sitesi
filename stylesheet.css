@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+
+body{
+    font-size:85%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#ustAlan {
+    height: 10.4em;
+    background-color:#CCCCCC;
+}
+
+.kapsul {
+    background-color: blue;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+
+#solAlan {
+
+    float: left;
+    clear:both;
+    width: 5em;
+    height: 5em;
+    margin-bottom: 1em;
+    
+}
+
+#icerikAlani {
+
+    margin: 0 0 1em 20em;
+    font:1.1em Arial, Helvetica, sans-serif;
+}
+
+#icerikAlani:after {
+
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#icerikAlani {
+    background:#F78200;
+    display: inline-block;
+}
+
+* html #icerikAlani {
+    height: 1%;
+}
+
+#altAlan, .tampon {
+    height: 4em;
+}

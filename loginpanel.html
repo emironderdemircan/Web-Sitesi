@@ -32,7 +32,7 @@
       <li class="nav-item">
         <a class="nav-link" href="egitimbilgilerim.html">EĞİTİM BİLGİLERİM</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="sehrim.html">ŞEHRİM</a>
       </li>
       <li class="nav-item">
@@ -41,7 +41,7 @@
       <li class="nav-item">
         <a class="nav-link" href="iletisim.html">İLETİŞİM</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="loginpanel.html">Kullanıcı Girişi</a>
       </li>
     </ul>
@@ -51,65 +51,34 @@
          </div>
      </div> 
      <hr><hr>
-     <div class="row bolum2">
+     <div class="container">
+      <div class="row bolum2">
      <div class="col">
-         <h1 class="display-2 text-center">ŞEHRİM</h1><hr>
+         <h1 class="display-2 text-center">GİRİŞ PANELİ</h1>
          <div class="container">
      <div class="row">
          <div class="col">
          <div class="media ">
-     <div align="center" id="sehrim" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#sehrim" data-slide-to="0" class="active"></li>
-    <li data-target="#sehrim" data-slide-to="1"></li>
-    <li data-target="#sehrim" data-slide-to="2"></li>
-    <li data-target="#sehrim" data-slide-to="3"></li>
-    <li data-target="#sehrim" data-slide-to="4"></li>
-  </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-
-      <a href="sehrim/sehrim-gezilecek-yerler.html"><img src="img/gezilecekyer.jpg" alt="Gezilecek Yerler" width="500" height="400"></a>
-      <div class="carousel-caption">
-        <h1><big><strong>Gezilecek yerler</strong></big></h1>
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <a href="sehrim/sehrim-meshur-yemekler.html"><img src="img/yemek.jpg" alt="Yemek" width="500" height="400"></a>
-      <div class="carousel-caption">
-        <h1><big><strong>Kayseri'nin Meşhur Yemekleri</strong></big></h1>
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <a href="sehrim/sehrim-cografik-konum.html"><img src="img/konum.jpg" alt="Kayseri'nin Coğrafi Konumu Ve Özellikleri" width="500" height="400"></a>
-      <div class="carousel-caption">
-        <h1><big><strong>Kayseri'nin Coğrafi Konumu Ve Özellikleri</strong></big></h1>
-      </div>   
-    </div>
-  <div class="carousel-item">
-      <a href="sehrim/sehrim-ekonomik-yapi.html"><img src="img/ekonomi.jpg" alt="Kayseri'nin Ekonomik Yapısı" width="500" height="400"></a>
-      <div class="carousel-caption">
-        <h1><big><strong>Kayseri'nin Ekonomik Yapısı</strong></big></h1>
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <a href="sehrim/sehrim-tarih.html"><img src="img/tarih.jpg" alt="Kayseri'nin Tarihi" width="500" height="400"></a>
-      <div class="carousel-caption">
-        <h1><big><strong>Kayseri'nin Tarihi</strong></big></h1>
-      </div>   
-    </div>
-  <a class="carousel-control-prev" href="#sehrim" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#sehrim" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
-
-<h3><mark>Kayseri Yüzölçümü:</mark>16.917 km²</h3>
-<h3><mark>Kayseri Nüfusu:</mark>1.389.680</h3>
-<h3><mark>Kayseri İlçeleri:</mark>Kocasinan, Melikgazi, Talas, Develi, Yahyalı, Bünyan, Pınarbaşı, İncesu, Tomarza, Yeşilhisar, Sarıoğlan, Hacılar, Sarız, Felahiye, Akkışla, Özvatan</h3>
-
+      
+  <form action="login.php" method="POST">
+<table align="center">
+<tr>
+<td>Kullanici Adi</td>
+<td>:</td>
+<td><input type="email" name="username" required=""></td>
+</tr>
+<tr>
+<td>Sifre</td>
+<td>:</td>
+<td><input type="password" name="password" required=""></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><input type="submit" value="Giris"></td>
+</tr>
+</table>
+</form>
      
      
      

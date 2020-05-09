@@ -1,47 +1,19 @@
 <html lang="tr">
-<head>
 
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="stylesheet.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico|Shadows+Into+Light|Ubuntu" rel="stylesheet">
-  
-  <title>EMİR ÖNDER DEMİRCAN</title>
-  <style type="text/css">
-    .container {
-      width: 500px;
-      clear: both;
-    }
-    .container input {
-      width: 100%;
-      clear: both;
-      border: 2px solid DeepSkyBlue;
-      border-radius: 4px;
-    }
-    input[type=submit], input[type=reset] { 
+  <title>EMİR ÖNDER DEMİRCAN - Kişisel Blog Sayfası</title>
+</head>
 
-      background-color: #4CAF50;
-
-      border: none;
-
-      color: white;
-
-      padding: 18px 36px;
-
-      margin: 5px 3px;
-
-      cursor: pointer;
-    </style>
-  </head>
-  <body>
-
-   <div class="container-fluid">
-     <div class="row mb-5">
-       <div class="col">
-         
-         <nav class="navbar navbar-expand-lg navbar-light bg-a fixed-top">
+<body>
+  <div class="container-fluid">
+    <div class="row mb-5">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg navbar-light bg-a fixed-top">
           <a class="navbar-brand yazi" href="#" style="font-size: 32px;">Emir Önder Demircan</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -49,22 +21,20 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav ">
               <li class="nav-item">
-                <a class="nav-link" href="anasayfa.html">ANASAYFA<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Hakkımda</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="egitimbilgilerim.html">Eğitim Bilgilerim</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="hakkimda.html">HAKKIMDA</a>
+                <a class="nav-link" href="sehrim.html">Şehrim</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="egitimbilgilerim.html">EĞİTİM BİLGİLERİM</a>
+                <a class="nav-link" href="mirasim.html">Mirasım</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sehrim.html">ŞEHRİM</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="mirasim.html">MİRASIM</a>
-              </li>
-              <li class="nav-item  active">
-                <a class="nav-link" href="iletisim.html">İLETİŞİM</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="iletisim.html">İletişim</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="loginpanel.html">Kullanıcı Girişi</a>
@@ -74,28 +44,125 @@
 
         </nav>
       </div>
-    </div> 
+    </div>
+  </div>
 
-    <hr><hr>
-    <h1 align="center"><b><big>İLETİŞİM</big></b></h1>
-    <hr>
-    <div id="post" class="container">
+  <hr><hr>
+  <h1 align="center"><b><big>İLETİŞİM</big></b></h1>
+  <hr>
+  <div class="container " style="background-color: skyblue;" >
+    <br><br>
+    <form class="container" action="Send.php" method="POST" id="form" novalidate="" name="form" onsubmit="return kontrol()">
+      <div class="form-group">                       
+        <span>Adınız:</span>
+        <div class="col-md-10">
+          <input id="ad" class="form-control" type="text" placeholder="Adınız..." name="ad">    
+        </div>
+      </div>
+      <div class="form-group">                        
+        <span>Soyadınız:</span>
+        <div class="col-md-10">
+          <input id="soyad" class="form-control" placeholder="Soyadınız..." type="text" name="soyad">    
+        </div>         
+      </div>
+      <div class="form-group">                        
+        <span>Doğum Tarihiniz:</span>
+        <div class="col-md-10">
+          <input class="form-control" type="date" placeholder="Doğum Tarihiniz..." name="dogum" id="dogum">    
+        </div>          
+      </div>
+      <div class="form-group">                  
+        <span>Eğitim Durumunuz:</span>
+        <div class="col-md-10">
+          <select  class="form-control" name="egitim" id="egitim">          
+            <option>İlkokul</option>
+            <option>Ortaokul</option>
+            <option>Lise</option>
+            <option>Üniversite</option>
+          </select>
+        </div>        
+      </div>
+      <div class="form-group">                        
+        <span>E-Mail:</span>
+        <div class="col-md-10 mx-1">
+          <input id="email" class="form-control" placeholder="Email Adresiniz..." type="email" name="email">    
+        </div>          
+      </div>
+      <div class="form-group">                     
+        <span>Cinsiyet:</span>        
+        <div>
+          <input class="mx-1" id="cns" type="radio" name="cns" value="bay">Erkek
+          <input class="mx-1" id="cns" type="radio" name="cns" value="bayan">Kadın   
+        </div>          
+      </div>
+      <div class="form-group">              
+        <span>Mesajınız:</span>
+        <div>
+          <textarea class="form-control" id="mesaj" name="mesaj" placeholder="Mesajınız.." ></textarea>   
+        </div>  
+      </div>
+      <div class="form-group">        
+        <span>Yüklemek İstediğiniz Dosya</span>
+        <div>
+          <input id="dosya" class="form-control" type="File" name="dosya">   
+        </div>     
+      </div>  
+      <div class="row">      
+        <button class="btn bg-success" onclick="kontrol()" type="submit">Gönder</button> 
+        <div class="mx-2"></div>
+        <button class="btn bg-danger" type="reset">Temizle</button>      
+      </div>
 
-     <form action="send.php" name="form" method="POST" id="form" novalidate=""  target="_blank">
+      <script>
+        function kontrol()
+        {
+          var ad = document.getElementById("ad").value;
+          var soyad = document.getElementById("soyad").value;
+          var dogum = document.getElementById("dogum").value;
+          var email = document.getElementById("email").value;
+          var mesaj = document.getElementById("mesaj").value;
+          var atpos = email.indexOf("@");
+          var dotpos = email.lastIndexOf(".");
+          var sayac = 0;
+          if (ad == null || ad == "")
+          {
+            alert("Ad doldurulması zorunludur!!!");
+            return false;
+          }
+          if (soyad == null || soyad == "")
+          {
+            alert("Soyad doldurulması zorunludur!!!");
+            return false;
+          }
+          if (dogum == null || dogum == "")
+          {
+            alert("Doğum Tarihi doldurulması zorunludur!!!");
+            return false;
+          }
+          if (email == null || email == "")
+          {
+            alert("E-Mail doldurulması zorunludur!!!");
+            return false;
+          }
+          if (mesaj == null || mesaj == "")
+          {
+            alert("Mesaj doldurulması zorunludur!!!");
+            return false;
+          }
+          if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= kullaniciemail.length) {
+            alert("Geçerli email adresi girin !!");
+            return false;
+          }
+          
+        }
 
-      Adınız    <input type="text" id="ad" name="texttypead" autofocus="" placeholder="Lütfen Adınızı Giriniz." required="">
-      Soyadınız <input type="text" id="soyad" name="texttypesoyad" autofocus="" placeholder="Lütfen Soyadınızı Giriniz." required="">
-      E-mail <input type="email" id="email" name="texttypeemail" autocomplete="off" placeholder="Mail Giriniz." required=""><br><br>
-      <input style="width: 720px;" id="konu" type="text" name="texttypekonu" placeholder="Konu Giriniz."><br><br>
-      <textarea rows="10" cols="100" name="texttypemesaj" id="mesaj" placeholder="Mesaj Giriniz"></textarea><br><br>
-      <input type="File" id="dosya" multiple="" name="dosya"><br><br>
+      </script>
 
-
-      <input type="submit" value="Formu Gönder" name="gönder">
-      <input type="submit" value="Formu Temzile" name="">
-
-      
     </form>
+    
+
+
+
   </div>
   
   

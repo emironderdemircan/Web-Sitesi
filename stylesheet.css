@@ -1,12 +1,19 @@
 body { 
-  background: url(img/arkaplan.jpeg) no-repeat center center fixed; 
+  background: url(img/arkaplan.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
 
 }
+
+
+
+.table-color-1 {
+    background-color:#cff1ef;
+    color:black;
+}
+
 .bg-a{
     background-color:#0073BC;
 }
@@ -15,7 +22,13 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.imageme {
+    transform: rotate(180deg) !important;
+}
 
+.top-fixed-login {
+    margin-top: 5em !important;
+}
 
 .nav-link:hover{
     color: white!important;

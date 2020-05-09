@@ -1,21 +1,10 @@
 <?php 
-if(isset($_POST["gönder"])){
-	$v1 = $_POST["texttypead"];
-	$v2 = $_POST["texttypesoyad"];
-	$v3 = $_POST["texttypeemail"];
-	$v4 = $_POST["texttypekonu"];
-	$v5 = $_POST["texttypemesaj"];
-	$v6 = $_POST["texttypedosya"];
-	echo $v1;
-	echo "<br>";
-	echo $v2;
-	echo "<br>";
-	echo $v3;
-	echo "<br>";
-	echo $v4;
-	echo "<br>";
-	echo $v5;
-	echo "<br>";
-	echo $v6;		
-}
+echo "Adı:".$_POST['ad'];
+echo "<br>Soyadı:".$_POST['soyad'];
+echo "<br>Doğum Tarihi:".$_POST['dogum'];
+echo "<br>Eğitim Düzeyi:".$_POST['egitim'];
+echo "<br>E-Mail:".$_POST['email'];
+echo "<br>Cinsiyet:".$_POST['cns'];
+echo "<br>Kullanıcı Mesajı:".$_POST['mesaj'];
+echo "<br>Gönderilen Dosya:".$_POST['dosya'];
 ?>
